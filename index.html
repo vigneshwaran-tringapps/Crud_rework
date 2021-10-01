@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRUD with JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Full Name*</label>
+                            <input type="text" name="fullName" placeholder="Enter name" id="fullName" pattern="[a-zA-Z]{3,}" title="Enter only letters" required>
+                        </div>
+                        <div>
+                            <label>Age</label>
+                            <input type="number" name="age" placeholder="Enter Age" max="60" id="age" required> 
+                        </div>
+                        <div class="gender">
+                            <label >Gender</label><br>    
+                            <input type="radio" name="gender" class="gender" id="male" value="Male">Male
+                            <input type="radio" name="gender" class="gender" id="female" value="female">Female
+                        </div>
+                        <div>
+                            <br>
+                            <label>Hobby</label>
+                            <select type="text" name="hobby" id="hobby">
+                                <option value="">Select Hobby</option>
+                                <option value="Cricket">Cricket</option>
+                                <option value="Dance">Dance</option>
+                                <option value="singing">Singing</option>
+                                <option value="Cooking">Cooking</option>
+                                <option value="Football">Football</option>
+                                <option value="Chess">Chess</option>
+                                <option value="Chess">Others</option>
+                            </select>
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <div class="scrollist">
+                    <table class="list" id="employeeList" >
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Hobby</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <script src="js/script.js" defer></script>
+    </body>
+</html>
